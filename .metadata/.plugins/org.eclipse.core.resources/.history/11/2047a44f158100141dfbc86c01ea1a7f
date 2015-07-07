@@ -1,0 +1,35 @@
+import java.util.HashMap;
+import java.util.Map;
+
+
+public class eng2mon {
+	Map<Character, Character> cv = new HashMap<Character, Character>(); 
+	public void init_c2v() {
+		cv.put('A', 'А');
+		cv.put('S', 'С');
+		cv.put('D', 'Д');
+		cv.put('F', 'П');
+		cv.put('G', 'Г');
+		cv.put('H','Х');
+		cv['J']=L"Ж";
+		cv['K']=L"К";
+		cv['L']=L"Л";
+		cv['Q']=L"К";
+		cv['W']=L"В";
+		cv['E']=L"И";
+		cv['R']=L"Р";
+		cv['T']=L"Т";
+		cv['Y']=L"И";
+		cv['U']=L"У";
+		cv['I']=L"И";
+		cv['O']=L"О";
+		cv['P']=L"П";
+		cv['Z']=L"З";
+		cv['X']=L"Х";
+		cv['C']=L"С";
+		cv['V']=L"В";
+		cv['B']=L"Б";
+		cv['N']=L"Н";
+		cv['M']=L"М";
+	}
+}

@@ -1,0 +1,9 @@
+import java.util.Map;
+
+
+public class eng2mon {
+	Map<char, char> li;
+	public void init_c2v() {
+		
+	}
+}

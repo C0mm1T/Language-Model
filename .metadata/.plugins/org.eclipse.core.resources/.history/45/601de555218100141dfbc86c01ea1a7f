@@ -1,0 +1,57 @@
+import java.io.*;
+
+public class language_model {
+
+	public static void main(String[] args) {
+		 
+		BufferedReader in = null;
+		BufferedWriter out = null;
+ 
+		try {
+ 
+			String sCurrentLine;
+			String word="";
+			
+			in = new BufferedReader(new FileReader("input.txt"));
+			out = new BufferedWriter(new FileWriter("output.txt"));
+ 
+			while ((sCurrentLine = in.readLine()) != null) {
+				for (String retval: sCurrentLine.split(" ")){
+					word = word +' '+ search(retval);
+					
+			     }
+				out.write("<s>"+word+"</s>\n");
+				word="";
+			}
+		} catch (IOException e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				if (in != null && out != null){in.close();out.close();}
+			} catch (IOException ex) {
+				ex.printStackTrace();
+			}
+		}
+ 
+	}
+
+	private static String search(String retval) {
+		retval.toLowerCase();
+		
+		return;
+	}
+	
+	public static String convert(String string1){
+		String word="";
+		int n = string1.length();
+		char chars = ' ';
+		for (int i = 0; i < n; i++) {
+			chars = string1.charAt(i);
+			if (chars>47 && chars<48 || chars>57)
+				if (chars!='.') 
+					word =word+chars;
+		}
+		return word.toLowerCase();
+	} 
+	
+}

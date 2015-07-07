@@ -1,0 +1,10 @@
+import java.util.Map;
+
+
+public class eng2mon {
+	Map<Character, Integer> m = new HashMap<Character, Integer>();
+ 
+	public void init_c2v() {
+		
+	}
+}
